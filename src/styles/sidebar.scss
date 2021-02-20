@@ -1,0 +1,25 @@
+@import "variables.scss";
+
+.custom-sidebar {
+  z-index: 100;
+  transition: 0.4s;
+  overflow: auto;
+  width: 15vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  &.mobile {
+    width: 75%;
+  }
+  @media screen and (min-width: 992px) {
+    width: 12%;
+  }
+  @media screen and (max-width: 786px) {
+    width: 15%;
+  }
+
+  .nav-link.active {
+    color: $gray-900 !important;
+  }
+}

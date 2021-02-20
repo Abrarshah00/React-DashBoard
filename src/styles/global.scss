@@ -1,0 +1,64 @@
+@import "variables.scss";
+
+.custom-rounded {
+  border-radius: 0.6em;
+}
+
+.custom-border {
+  border: 1px solid $gray-500;
+}
+
+.custom-width-100 {
+  width:100%;
+  @media screen and (min-width: 768px) {
+    width: auto;
+  }
+}
+
+.font-size-smaller {
+  font-size: 0.5rem;
+}
+.font-size-small {
+  font-size: 0.8rem;
+}
+.font-size-md {
+  font-size: 0.9rem;
+}
+.font-size-large {
+  font-size: 1.2rem;
+}
+.font-size-larger {
+  font-size: 1.5rem;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.arabic-form * {
+  
+    text-align: end;
+  
+}
+
+.login-container {
+  left: 50%;
+  top: 40%;
+  position: absolute;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  -moz-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+  .card{
+    min-width: 400px;
+    @media screen and (max-width: 576px){
+      min-width: 240px;
+    }
+  }
+}
+
+.custom-loader-overlay {
+  background: rgba(0,0,0,0.4) !important;
+}
+.custom-loader-wrapper.fullscreen {
+  height: 100%;
+}
